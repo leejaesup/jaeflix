@@ -13,6 +13,7 @@ const Banner = () => {
     }
     return (
         <div style={{
+            // eslint-disable-next-line
             backgroundImage:"url(" + `https://www.themoviedb.org/t/p/w1066_and_h600_bestv2${data?.results[0].poster_path}` + ")"
         }}
         className="banner">
