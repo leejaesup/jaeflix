@@ -11,11 +11,10 @@ const MoviePage = () => {
     const [page, setPage] = useState(1);
     const keyword = query.get("q");
     const {data, isLoading, isError, error} = useSearchMovieQuery({keyword, page});
-    // console.log("ddd", data);
 
     const handlePageClick = ({selected}) => {
         setPage(selected+1);
-
+        console.log(setQuery);
     }
 
     if (isLoading) {

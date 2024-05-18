@@ -14,8 +14,8 @@ const api = axios.create({
     headers: {
         Accept: "application/json",
         // Authorization: `Bearer ${API_KEY}`,
-        // Authorization: `Bearer ${API_KEY}`,
-        Authorization: `Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjYWU4MjEwOTM3N2I1MmZlNzQ3ZGYxZDBiMjQ3Zjk2NCIsInN1YiI6IjY2NDRjNGU5M2Y0NGRjNWUzNzc4MDExMyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.c8rjMkgzwIx7nv6zHP_gjlkZx3_S3Jn1ji4nkMhe0Us`,
+        Authorization: `Bearer ${API_KEY}`,
+        // Authorization: `Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjYWU4MjEwOTM3N2I1MmZlNzQ3ZGYxZDBiMjQ3Zjk2NCIsInN1YiI6IjY2NDRjNGU5M2Y0NGRjNWUzNzc4MDExMyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.c8rjMkgzwIx7nv6zHP_gjlkZx3_S3Jn1ji4nkMhe0Us`,
     }
 });
 
