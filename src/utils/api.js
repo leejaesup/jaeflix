@@ -1,13 +1,22 @@
 import axios from "axios";
 const API_KEY = process.env.REACT_APP_API_KEY;
 
+// const api = axios.create({
+//     baseURL: "https://api.themoviedb.org/3",
+//     headers: {
+//         Accept: 'application/json',
+//         Authorization: `Bearer ${API_KEY}`,
+//         select:(result)=> result.data,
+//     },
+// });
 const api = axios.create({
     baseURL: "https://api.themoviedb.org/3",
     headers: {
-        Accept: 'application/json',
-        Authorization: `Bearer ${API_KEY}`,
-        select:(result)=> result.data,
-    },
+        Accept: "application/json",
+        // Authorization: `Bearer ${API_KEY}`,
+        // Authorization: `Bearer ${API_KEY}`,
+        Authorization: `Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjYWU4MjEwOTM3N2I1MmZlNzQ3ZGYxZDBiMjQ3Zjk2NCIsInN1YiI6IjY2NDRjNGU5M2Y0NGRjNWUzNzc4MDExMyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.c8rjMkgzwIx7nv6zHP_gjlkZx3_S3Jn1ji4nkMhe0Us`,
+    }
 });
 
 // 요청 인터셉터 추가하기
